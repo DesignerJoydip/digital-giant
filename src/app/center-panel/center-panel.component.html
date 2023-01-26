@@ -1,0 +1,13 @@
+<div class="DG-gallery-area">
+    <div class="DG-scroll-area">
+        <ul class="DG-gallery-list">
+            <li *ngFor="let image of imageGallery; let i = index">
+                <div class="DG-img-holder" [ngClass]="{'active': i==0}">
+                    <img src="assets/img/car.jpg" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

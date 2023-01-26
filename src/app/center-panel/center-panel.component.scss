@@ -1,0 +1,93 @@
+.DG-gallery-area{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;  
+    /*&:after {
+        content: '';
+        width: 30px;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: #2d2d2d;
+    }*/
+}
+.DG-gallery-list{
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 5px 0px 0px 5px;
+    margin: 0px;
+    > li{
+        width: 18%;
+        margin: 10px 10px;
+        @media (max-width:1599px){
+            width: 17%;
+        }
+        @media (max-width:1200px){
+            width: 28.3%;
+        }
+        @media (max-width:767px){
+            width: 100%;
+        }
+    }
+}
+
+.DG-scroll-area {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow-y: auto;
+    border-right: #2d2d2d solid 5px;
+    position: relative;
+    z-index: 1;
+    @media (max-width:767px) {
+        border-right: #2d2d2d solid 0px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 20px;
+        height: 20px;
+        @media (max-width:767px) {
+            width: 7px;
+            height: 7px;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #2d2d2d;
+        box-shadow: #2d2d2d 0px 0px 0px 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #6b6b6b;
+        border-radius: 15px;
+    }
+}
+
+.DG-img-holder{
+    width: 100%;
+    height: 126px;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    @media (max-width:1599px) {
+        height: 110px;
+    }
+    @media (max-width:767px) {
+        height: 285px;
+    }
+    @media (max-width:380px) {
+        height: 150px;
+    }
+    > img{
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    &.active{
+        box-shadow: #11c1f2 0px 0px 0px 5px;
+    }
+}

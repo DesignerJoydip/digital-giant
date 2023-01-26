@@ -1,0 +1,76 @@
+<div class="DG-left-panel-area" #mob_left_panel>
+    <div class="DG-mob-expnd-btn" (click)="mob_left_panel.classList.toggle('mob-opened')">FILTER</div>
+    <div class="DG-scroll-area">
+        <ul class="DG-filter-list">
+            <li>
+                <label class="label-name">VEHICLE</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of vehicle" [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">MODEL YEAR</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of model"
+                        [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">MODEL CODE</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of code" [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">OPTION</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of option" [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">EXT</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of ext" [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">INT</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of code"
+                        [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">content type</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of code"
+                        [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">environment</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of code"
+                        [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+            <li>
+                <label class="label-name">camera</label>
+                <mat-radio-group class="custom-input-group">
+                    <mat-radio-button class="custom-radio-button" *ngFor="let item of code"
+                        [value]="item">{{item}}</mat-radio-button>
+                </mat-radio-group>
+            </li>
+
+        </ul>
+    </div>
+</div>
+

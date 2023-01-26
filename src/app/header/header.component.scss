@@ -1,0 +1,20 @@
+.DG-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+.DG-hdr-logo{
+    width: auto;
+    display: inline-block;
+    > img{
+        width: auto;
+        max-width: 270px;
+        float: left;
+        @media (max-width:767px) {
+            max-width: 200px;
+        }
+    }
+}
